@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Liderança em acessibilidade digital para BPO financeiro — Gustavo Barbosa</title>
-<meta name="description" content="Estudo de caso: processo de validação de acessibilidade digital (WCAG) em 2 produtos na Bild Desenvolvimento Imobiliário.">
+<title>Validação de acessibilidade para pessoas não videntes nos apps ConectaBild e VittaFácil — Gustavo Barbosa</title>
+<meta name="description" content="Estudo de caso: processo completo de validação de acessibilidade digital (testes automatizados, testes de usabilidade com pessoas cegas reais e handoff) na Bild Desenvolvimento Imobiliário.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#FAFAFA" id="themeColorMeta">
 <link rel="canonical" href="https://gustavobarbosa.design/caso-bild-acessibilidade.html">
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Liderança em acessibilidade digital para BPO financeiro — Gustavo Barbosa">
-<meta property="og:description" content="Estudo de caso: processo de validação de acessibilidade digital (WCAG) em 2 produtos na Bild Desenvolvimento Imobiliário.">
+<meta property="og:title" content="Validação de acessibilidade para pessoas não videntes nos apps ConectaBild e VittaFácil — Gustavo Barbosa">
+<meta property="og:description" content="Estudo de caso: processo completo de validação de acessibilidade digital (testes automatizados, testes de usabilidade com pessoas cegas reais e handoff) na Bild Desenvolvimento Imobiliário.">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Liderança em acessibilidade digital para BPO financeiro — Gustavo Barbosa">
-<meta name="twitter:description" content="Estudo de caso: processo de validação de acessibilidade digital (WCAG) em 2 produtos na Bild Desenvolvimento Imobiliário.">
+<meta name="twitter:title" content="Validação de acessibilidade para pessoas não videntes nos apps ConectaBild e VittaFácil — Gustavo Barbosa">
+<meta name="twitter:description" content="Estudo de caso: processo completo de validação de acessibilidade digital (testes automatizados, testes de usabilidade com pessoas cegas reais e handoff) na Bild Desenvolvimento Imobiliário.">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230E0F11'/%3E%3Crect x='38' y='38' width='24' height='24' rx='4' fill='%233B5BFF'/%3E%3C/svg%3E">
 
@@ -802,62 +802,61 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
   <a href="home.html#experiencia" class="case-detail__back">← Voltar para o portfólio</a>
 
   <p class="eyebrow case-detail__eyebrow"><span class="dot"></span>BILD DESENVOLVIMENTO IMOBILIÁRIO · CONSTRUÇÃO CIVIL · ACESSIBILIDADE</p>
-  <h1 class="case-detail__title">Liderança em acessibilidade digital para BPO financeiro</h1>
-  <p class="case-detail__summary">Estruturação de um processo de validação de acessibilidade digital, do zero, para 2 produtos desenvolvidos em um processo de BPO financeiro voltado a outras construtoras.</p>
+  <h1 class="case-detail__title">Validação de acessibilidade para pessoas não videntes nos apps ConectaBild e VittaFácil</h1>
+  <p class="case-detail__summary">Um processo completo de validação de acessibilidade digital — testes automatizados, testes de usabilidade com pessoas cegas reais e handoff estruturado para o time de front-end — conduzido para os dois principais apps do time de Inovação do grupo Bild&amp;Vitta.</p>
 
   <dl class="case-detail__meta">
-    <div class="case-detail__meta-item"><dt>Papel</dt><dd>Product Designer II</dd></div>
-    <div class="case-detail__meta-item"><dt>Modelo</dt><dd>Híbrido · Ribeirão Preto, SP</dd></div>
+    <div class="case-detail__meta-item"><dt>Papel</dt><dd>Product Designer, condução ponta a ponta do processo</dd></div>
+    <div class="case-detail__meta-item"><dt>Produtos</dt><dd>ConectaBild e VittaFácil</dd></div>
     <div class="case-detail__meta-item"><dt>Período</dt><dd>mar 2021 — abr 2022</dd></div>
   </dl>
 
   <section class="case-detail__section">
     <h2>Contexto</h2>
-    <p>A Bild oferecia, via um processo de BPO financeiro, produtos digitais usados por outras construtoras. Como esses produtos atendiam públicos externos e variados, a acessibilidade digital deixava de ser um "extra" e passava a ser um requisito de negócio — mas não havia, até então, um processo estruturado para validar e sustentar esse padrão ao longo do tempo.</p>
+    <p>O ConectaBild e o VittaFácil são os apps do time de Inovação do grupo Bild&amp;Vitta, responsáveis por dar autonomia aos clientes durante toda a jornada com a construtora — desde autoatendimento (solicitação de assistência técnica, agendamento de vistoria) até informação (galeria com a evolução do empreendimento, extratos financeiros, 2ª via de boleto).</p>
+    <p>Segundo o Censo IBGE de 2010, cerca de 24% da população brasileira declara algum tipo de deficiência, e uma parcela relevante desse grupo tem alguma dificuldade visual. Além do respaldo da Lei Brasileira de Inclusão da Pessoa com Deficiência, isso significava que qualquer falha de acessibilidade no Portal de Relacionamento afetava diretamente a autonomia de clientes reais — não era uma questão apenas de conformidade.</p>
   </section>
 
   <section class="case-detail__section">
     <h2>Problema</h2>
-    <p>Os dois produtos em questão nunca haviam passado por uma validação de acessibilidade formal. Sem um processo definido, decisões de acessibilidade ficavam dependentes do conhecimento individual de quem estava desenhando cada tela naquele momento — o que gerava inconsistência e risco de regressão a cada nova entrega.</p>
+    <p>Os produtos do Portal de Relacionamento nunca haviam passado por uma validação estruturada de acessibilidade visual. Em uma conversa inicial, um cliente não vidente resumiu bem o risco de testar apenas com leitores de tela sem entender o contexto real de uso — o que deixou claro que o processo precisava ir além de uma checagem técnica pontual.</p>
   </section>
 
   <section class="case-detail__section">
     <h2>Papel</h2>
-    <p>Liderei o processo de validação de acessibilidade digital nos 2 produtos, do diagnóstico inicial à correção guiada com os times responsáveis, e conduzi workshops internos para elevar o conhecimento do time em acessibilidade.</p>
+    <p>Conduzi o processo do início ao fim: defini a metodologia, executei os testes automatizados, recrutei e moderei os testes de usabilidade — incluindo com clientes reais não videntes — e estruturei a documentação de handoff para o time de desenvolvimento front-end.</p>
   </section>
 
   <section class="case-detail__section">
     <h2>Processo</h2>
-    <ul>
-      <li>Auditoria dos dois produtos com base no guia WCAG, mapeando pontos de não conformidade por severidade.</li>
-      <li>Priorização das correções junto aos times de desenvolvimento, equilibrando impacto para o usuário com esforço de implementação.</li>
-      <li>Condução de workshops de acessibilidade digital, conectando o time com referências de mercado e boas práticas já consolidadas fora da empresa.</li>
-      <li>Definição de critérios de acessibilidade para entrar no fluxo de revisão de novas telas, evitando que o problema se repetisse a cada lançamento.</li>
-    </ul>
+    <p><strong>Testes automatizados.</strong> Validação de taxa de contraste com o plugin Able (Figma) e o Verificador de Contraste da Adobe Color, seguindo os critérios do WCAG 2.1 (mínimo de 4,5:1 para texto normal). Em paralelo, simulação dos principais tipos de daltonismo — protanopia, deuteranopia, tritanopia e acromatopsia — para revalidar as combinações de cor de cada tela.</p>
+    <p><strong>Teste piloto interno.</strong> Antes de ir a campo, conduzi testes de usabilidade adaptados com 4 designers e 2 desenvolvedores front-end da própria Inovação, vendados, para validar o roteiro. Ficou claro nessa etapa que a equipe ainda estava numa curva de aprendizado com leitores de tela — reforçando que só testar com a equipe não seria suficiente.</p>
+    <p><strong>Testes com usuários reais.</strong> Recrutei, via o time de Inteligência de Clientes, um casal de clientes do ConectaBild que são não videntes. Como os testes precisaram ser remotos, apliquei antes uma pré-triagem (plataforma de videoconferência mais acessível, modelo do smartphone, leitor de tela usado) para preparar a sessão. O roteiro cobriu 4 tarefas construídas a partir dos fluxos mais usados no Google Analytics, com um desenvolvedor front-end como observador. Ao final, os participantes responderam ao questionário SUS (System Usability Scale).</p>
+    <p><strong>Handoff.</strong> Os achados foram documentados e priorizados por criticidade, destacando que ajustes no TalkBack (Android) nem sempre resolviam o mesmo problema no VoiceOver (iOS) — cada plataforma exigiu tratamento específico.</p>
   </section>
 
   <section class="case-detail__section case-detail__result card">
     <h2>Resultado</h2>
-    <p>Os dois produtos passaram pela validação completa de acessibilidade digital, e os workshops conduzidos elevaram a maturidade do time em WCAG — criando uma referência interna para os próximos produtos do processo de BPO.</p>
+    <p>O processo revelou desde problemas críticos de contraste até a ausência de descrição em ícones do menu principal — e terminou com uma pontuação de usabilidade bem acima do esperado:</p>
     <div class="case-detail__stats">
       <div class="stat">
+        <p class="stat-num">90/100</p>
+        <p class="stat-label">no SUS — acima do mínimo de 68 para um teste bem avaliado</p>
+      </div>
+      <div class="stat">
         <p class="stat-num">2</p>
-        <p class="stat-label">produtos com acessibilidade validada</p>
+        <p class="stat-label">sprints de 15 dias para implementar as correções priorizadas</p>
       </div>
       <div class="stat">
-        <p class="stat-num">WCAG</p>
-        <p class="stat-label">como base formal de validação</p>
-      </div>
-      <div class="stat">
-        <p class="stat-num">1</p>
-        <p class="stat-label">processo de revisão contínua implantado</p>
+        <p class="stat-num">8</p>
+        <p class="stat-label">pessoas envolvidas nos testes (designers, devs e clientes reais)</p>
       </div>
     </div>
   </section>
 
   <section class="case-detail__section">
     <h2>Aprendizado</h2>
-    <p>Acessibilidade funciona melhor como processo conduzido desde o início do que como checklist de última hora. Os workshops mostraram que boa parte da resistência inicial do time vinha de desconhecimento, não de discordância — uma vez com referências claras, a adoção foi natural.</p>
+    <p>Testar apenas com leitores de tela não garante acessibilidade — só entendendo o contexto real de uma pessoa não vidente é possível encontrar as falhas que realmente importam. Ficou claro também que iOS e Android exigem correções específicas, e que acessibilidade só se sustenta como cultura contínua, envolvendo produto, design e desenvolvimento juntos — não como uma validação pontual antes do lançamento.</p>
   </section>
 
   <nav class="case-pagination" aria-label="Outros estudos de caso">
