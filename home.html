@@ -475,127 +475,18 @@ body.no-scroll{ overflow:hidden; }
 }
 .case-chips{ display:flex; gap:8px; flex-wrap:wrap; }
 
- /* ---------- WORK / CASE STUDIES ---------- */
-  .work-list{
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-  }
-  .case{
-    display:grid;
-    grid-template-columns:0.86fr 1.14fr;
-    gap:0;
-    border:1px solid var(--border);
-    border-radius:var(--radius-l);
-    background:var(--bg-elevated);
-    overflow:hidden;
-    transition:border-color .2s ease, box-shadow .2s ease, transform .2s ease;
-  }
-  .case:hover{
-    border-color:var(--border-strong);
-    box-shadow:0 20px 40px -24px rgba(14,15,17,0.18);
-    transform:translateY(-2px);
-  }
-  .case-mock{
-    background:
-      linear-gradient(180deg, #F4F5FA 0%, #EEF0F8 100%);
-    padding:28px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    min-height:260px;
-    border-right:1px solid var(--border);
-  }
-  .mock-panel{
-    width:100%;
-    max-width:280px;
-    background:#fff;
-    border-radius:12px;
-    border:1px solid var(--border);
-    padding:16px;
-    box-shadow:0 12px 30px -18px rgba(14,15,17,0.25);
-  }
-  .mock-dots{ display:flex; gap:5px; margin-bottom:14px; }
-  .mock-dots span{ width:7px; height:7px; border-radius:50%; background:var(--border-strong); }
-  .mock-bar{ height:9px; border-radius:5px; background:var(--border); margin-bottom:8px; }
-  .mock-bar.w60{ width:60%; }
-  .mock-bar.w80{ width:80%; }
-  .mock-bar.w40{ width:40%; background:var(--accent-soft); }
-  .mock-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; margin-top:12px; }
-  .mock-cell{ aspect-ratio:1; border-radius:6px; background:var(--accent-soft); }
-  .mock-cell.on{ background:var(--accent); }
-
-  .case-body{
-    padding:36px 40px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
-  .case-tag{
-    font-family:var(--font-mono);
-    font-size:12px;
-    color:var(--accent);
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    margin-bottom:12px;
-  }
-  .case-body h3{
-    font-size:22px;
-    margin-bottom:12px;
-  }
-  .case-body p{
-    color:var(--ink-soft);
-    font-size:15px;
-    margin-bottom:18px;
-  }
-  .case-meta{
-    display:flex;
-    gap:28px;
-    flex-wrap:wrap;
-    margin-bottom:18px;
-  }
-  .case-meta div{ min-width:120px; }
-  .case-meta .m-label{
-    font-family:var(--font-mono);
-    font-size:11px;
-    color:var(--muted);
-    text-transform:uppercase;
-    letter-spacing:0.05em;
-    margin-bottom:4px;
-  }
-  .case-meta .m-value{
-    font-size:14.5px;
-    font-weight:500;
-  }
-  .case-chips{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-    margin-bottom:20px;
-  }
-  .chip{
-    font-size:12.5px;
-    padding:5px 11px;
-    background:var(--accent-soft);
-    color:var(--accent-ink);
-    border-radius:999px;
-    font-weight:500;
-  }
-  .case-link{
-    font-size:14.5px;
-    font-weight:500;
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    width:fit-content;
-    transition:gap .15s ease;
-  }
-  .case-link:hover{ gap:10px; color:var(--accent); }
-
-  @media (max-width:860px){
-    .case{ grid-template-columns:1fr; }
-    .case-mock{ border-right:none; border-bottom:1px solid var(--border); min-height:200px; }
-  }
+.case-link{
+  margin-top:18px;
+  font-size:14.5px;
+  font-weight:500;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  width:fit-content;
+  color:var(--accent);
+  transition:gap .15s ease;
+}
+.case-link:hover{ gap:10px; }
 
 /* ===================================================================
    ESPECIALIDADES
@@ -902,6 +793,7 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
               <span class="chip">Pesquisa quantitativa</span>
               <span class="chip">Multi-squad</span>
             </div>
+            <a href="caso-itau-pix.html" class="case-link">Ver estudo de caso →</a>
           </div>
         </article>
 
@@ -923,6 +815,7 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
               <span class="chip">Workshops</span>
               <span class="chip">BPO financeiro</span>
             </div>
+            <a href="caso-bild-acessibilidade.html" class="case-link">Ver estudo de caso →</a>
           </div>
         </article>
 
@@ -951,80 +844,6 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
       </div>
     </div>
   </section>
-<section id="trabalho">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow"><span class="dot"></span>TRABALHO SELECIONADO</p>
-      <h2>Três problemas, três sistemas diferentes.</h2>
-      <p>Cada projeto começou com uma dor concreta do usuário ou do time — não com um brief de "redesign".</p>
-    </div>
-
-    <div class="work-list">
-
-      <div class="case reveal">
-        <div class="case-mock">
-          <div class="mock-panel">
-            <div class="mock-dots"><span></span><span></span><span></span></div>
-            <div class="mock-bar w60"></div>
-            <div class="mock-bar w40"></div>
-            <div class="mock-bar w80"></div>
-            <div class="mock-grid">
-              <div class="mock-cell on"></div><div class="mock-cell"></div><div class="mock-cell"></div>
-              <div class="mock-cell"></div><div class="mock-cell on"></div><div class="mock-cell"></div>
-            </div>
-          </div>
-        </div>
-        <div class="case-body">
-          <p class="case-tag">Case 01 · Design systems</p>
-          <h3>Nimbus — um sistema para 12 squads falarem a mesma língua</h3>
-          <p>A fintech crescia rápido e cada squad reinventava seus próprios botões e formulários. Liderei a construção de um design system do zero, com documentação viva e adoção guiada.</p>
-          <div class="case-meta">
-            <div><div class="m-label">Papel</div><div class="m-value">Design lead</div></div>
-            <div><div class="m-label">Duração</div><div class="m-value">8 meses</div></div>
-            <div><div class="m-label">Impacto</div><div class="m-value">−35% no handoff</div></div>
-          </div>
-          <div class="case-chips">
-            <span class="chip">Design system</span>
-            <span class="chip">Figma</span>
-            <span class="chip">Documentação</span>
-          </div>
-          <a href="#" class="case-link">Ver estudo de caso →</a>
-        </div>
-      </div>
-
-      <div class="case reveal">
-        <div class="case-mock">
-          <div class="mock-panel">
-            <div class="mock-dots"><span></span><span></span><span></span></div>
-            <div class="mock-bar w80"></div>
-            <div class="mock-bar w60"></div>
-            <div class="mock-grid">
-              <div class="mock-cell"></div><div class="mock-cell on"></div><div class="mock-cell"></div>
-              <div class="mock-cell on"></div><div class="mock-cell"></div><div class="mock-cell on"></div>
-            </div>
-          </div>
-        </div>
-        <div class="case-body">
-          <p class="case-tag">Case 02 · Produto B2B</p>
-          <h3>Órbita — o painel de desenvolvedores que ninguém mais evitava</h3>
-          <p>Métricas essenciais estavam escondidas atrás de três cliques e o suporte vivia respondendo a mesma dúvida. Redesenhei a arquitetura de informação do zero, com testes de árvore antes de qualquer tela.</p>
-          <div class="case-meta">
-            <div><div class="m-label">Papel</div><div class="m-value">Product designer</div></div>
-            <div><div class="m-label">Duração</div><div class="m-value">4 meses</div></div>
-            <div><div class="m-label">Impacto</div><div class="m-value">NPS 32 → 61</div></div>
-          </div>
-          <div class="case-chips">
-            <span class="chip">Pesquisa</span>
-            <span class="chip">IA</span>
-            <span class="chip">Dashboard</span>
-          </div>
-          <a href="#" class="case-link">Ver estudo de caso →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
   <!-- ============ ESPECIALIDADES ============ -->
   <section id="especialidades" aria-label="Especialidades">
