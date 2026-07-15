@@ -807,58 +807,77 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
 
   <dl class="case-detail__meta">
     <div class="case-detail__meta-item"><dt>Papel</dt><dd>Product Designer II, em 2 squads simultâneos</dd></div>
-    <div class="case-detail__meta-item"><dt>Squad</dt><dd>Pagamentos</dd></div>
-    <div class="case-detail__meta-item"><dt>Período</dt><dd>abr 2022 — jun 2026</dd></div>
+    <div class="case-detail__meta-item"><dt>Squad</dt><dd>Limites Transacionais</dd></div>
+    <div class="case-detail__meta-item"><dt>Período</dt><dd>abr 2025 — jul 2025</dd></div>
   </dl>
 
   <section class="case-detail__section">
     <h2>Contexto</h2>
-    <p>O Pix é um dos produtos de maior volume transacional do Itaú, usado por perfis muito diferentes entre si — desde clientes do Varejo até o segmento Private. A jornada de Chaves Pix e as transações do dia a dia precisavam funcionar de forma consistente para todos esses perfis, sem perder a familiaridade de cada segmento com sua própria experiência dentro do banco.</p>
+    <p>O Pix é um dos produtos de maior volume transacional do Itaú, usado por perfis muito diferentes entre si — desde clientes do Varejo até o segmento Private. Ao mesmo tempo em que a adoção cresceu, também aumentaram as tentativas de fraude e golpes financeiros, exigindo mecanismos que equilibrassem conveniência e segurança.Os limites de transação representam uma das principais camadas de proteção contra movimentações indevidas. Entretanto, muitos clientes desconhecem como esses limites funcionam, quando podem ser alterados ou quanto tempo leva para que um novo valor entre em vigor. Essa falta de clareza gera dúvidas, reduz a confiança e aumenta a demanda por atendimento.</p>
   </section>
 
   <section class="case-detail__section">
     <h2>Problema</h2>
-    <p>A experiência de Limites transacionais concentrava boa parte do atrito: eram muitas variáveis (tipo de transação, horário, canal, segmento) apresentadas de forma pouco hierarquizada, o que exigia esforço extra do cliente para entender e ajustar seus próprios limites. O fluxo de consulta e alteração de Dados cadastrais também estava desatualizado frente ao novo Design System do banco, o que reduzia a taxa de atualização cadastral em todos os segmentos.</p>
+    <p>Diante desse cenário, o desafio consistiu em redesenhar a experiência de gestão de limites do Pix, tornando-a mais intuitiva, transparente e orientada à segurança. A proposta buscou permitir que o cliente compreendesse facilmente seus limites atuais, diferenciasse regras para períodos diurno e noturno, entendesse o prazo de aprovação para aumentos e tivesse autonomia para ajustar seus limites conforme suas necessidades, reduzindo atritos durante o processo.</p>
   </section>
 
   <section class="case-detail__section">
     <h2>Papel</h2>
-    <p>Atuei simultaneamente em 2 squads do time de Pagamentos, respondendo pela experiência de ponta a ponta da jornada transacional Pix e Chaves Pix — da pesquisa ao acompanhamento pós-lançamento — além de liderar a frente de simplificação de Limites transacionais e o redesenho do fluxo de Dados cadastrais.</p>
+    <p>Além da usabilidade, o projeto priorizou uma comunicação simples sobre as medidas de segurança adotadas pelo banco, reforçando a confiança dos usuários e incentivando boas práticas de proteção da conta. O resultado esperado era uma experiência mais clara e eficiente, capaz de reduzir erros, diminuir contatos com os canais de suporte e aumentar a percepção de controle e segurança durante as transações via Pix.</p>
   </section>
 
   <section class="case-detail__section">
     <h2>Processo</h2>
+    <h3>Discovery</h3>
     <ul>
       <li>Levantamento de dados de comportamento reais (GA4, FullStory) para identificar onde os clientes mais hesitavam ou abandonavam o ajuste de limites.</li>
       <li>Redesenho da hierarquia de informação da tela de Limites, priorizando os controles mais usados por cada segmento antes dos avançados.</li>
-      <li>Reconstrução do fluxo de Dados cadastrais dentro do novo Design System do Itaú, garantindo consistência com os demais produtos do banco.</li>
-      <li>Validação iterativa com os squads de Varejo, Uniclass, Personnalité e Private antes do rollout, checando se a mesma solução se sustentava para os quatro perfis.</li>
-      <li>Colaboração com o time do Iti, banco digital do Itaú, na entrega de 2 funcionalidades voltadas ao segmento Pequeno Empreendedor (EMP5).</li>
+      <li>Análise da métrica Customer Effort Score (CES), explorando avaliações e comentários de clientes de diferentes segmentos para identificar os principais pontos de fricção.</li>
+      <li>Investigação de dados comportamentais por meio do GA4 e FullStory, mapeando etapas de maior hesitação e abandono durante a configuração dos limites do Pix.</li>
+      <li>Estudo das regulamentações do Banco Central (BACEN) para garantir conformidade com as normas vigentes.</li>
+      <li>Benchmark interno com outras jornadas de gestão de limites do banco, como limite de conta e limite de cartão de crédito, identificando padrões e oportunidades de padronização da experiência.</li>
+    </ul>
+
+     <h3>Delivery</h3>
+    <ul>
+      <li>Evolução da interface por meio de sessões de Craft Design com especialistas e lideranças de Design.</li>
+      <li>Redesenho da hierarquia de informação da tela de Limites, priorizando os controles mais usados por cada segmento antes dos avançados.</li>
+      <li>Realização de Design Critiques com lideranças, comunidade de Design e squad para refinamento das soluções.</li>
+      <li>Planejamento do tagueamento da nova jornad para monitoramento de comportamento e mensuração de resultados.</li>
+      <li>Validação das interfaces com o time de Acessibilidade, assegurando conformidade com boas práticas de inclusão.</li>
     </ul>
   </section>
 
   <section class="case-detail__section case-detail__result card">
     <h2>Resultado</h2>
-    <p>A simplificação da experiência de Limites transacionais e o redesenho do fluxo de Dados cadastrais geraram ganhos mensuráveis em carga cognitiva, satisfação e adesão:</p>
+    <p>A simplificação da experiência de Limites transacionais gerou ganhos mensuráveis em carga cognitiva, satisfação e adesão:</p>
     <div class="case-detail__stats">
       <div class="stat">
         <p class="stat-num">−26%</p>
         <p class="stat-label">carga cognitiva em Limites transacionais</p>
       </div>
       <div class="stat">
+        <p class="stat-num">De 46 para 12%</p>
+        <p class="stat-label">Limites transacionais</p>
+      </div>
+      <div class="stat">
         <p class="stat-num">+8 pts</p>
         <p class="stat-label">no CES (Customer Effort Score)</p>
       </div>
       <div class="stat">
-        <p class="stat-num">+18%</p>
-        <p class="stat-label">na atualização cadastral, em todos os segmentos</p>
+        <p class="stat-num">1 prêmio%</p>
+        <p class="stat-label">premiação interna por impacto e inovação</p>
       </div>
     </div>
   </section>
 
   <section class="case-detail__section">
     <h2>Aprendizado</h2>
-    <p>Desenhar para múltiplos segmentos ao mesmo tempo exige equilibrar consistência de sistema com nuances reais de cada perfil de cliente — uma mesma tela raramente serve a todos igualmente bem. Atuar em 2 squads simultâneos também reforçou a importância de decisões de design bem documentadas: o que parece óbvio em uma conversa precisa sobreviver sem o designer por perto.</p>
+    <p>Este projeto reforçou que nem toda experiência pode ser simplificada apenas pela ótica do usuário. Em um contexto altamente regulado, como o financeiro, decisões de design precisam equilibrar usabilidade, segurança e conformidade com as diretrizes do Banco Central.
+
+Durante o desenvolvimento, observei que algumas instituições digitais reduzem a complexidade da gestão de limites ao flexibilizar determinadas regras da experiência, assumindo diferentes níveis de risco em relação às exigências regulatórias. No Itaú, a prioridade foi construir uma solução que preservasse a segurança e a conformidade, sem deixar de evoluir continuamente a experiência.
+
+Após o lançamento, o trabalho não se encerrou. A jornada passou a ser monitorada por meio de GA4, FullStory e da métrica Customer Effort Score (CES), permitindo identificar oportunidades de simplificação e orientar melhorias incrementais. Além disso, a evolução da solução continuou sendo acompanhada pelos OKRs da comunidade, garantindo que as decisões futuras permanecessem alinhadas aos objetivos de negócio e às necessidades dos clientes.</p>
   </section>
 
   <nav class="case-pagination" aria-label="Outros estudos de caso">
