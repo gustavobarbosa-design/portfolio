@@ -718,6 +718,19 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
   background:var(--accent);
 }
 
+.case-detail__mockup{
+  margin-bottom:44px;
+  border-radius:var(--radius-l);
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:linear-gradient(180deg, var(--mock-1) 0%, var(--mock-2) 100%);
+}
+.case-detail__mockup img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
 .case-detail__result{
   padding:32px;
   margin-bottom:44px;
@@ -847,6 +860,10 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
       <li>Validação das interfaces com o time de Acessibilidade, assegurando conformidade com boas práticas de inclusão.</li>
     </ul>
   </section>
+
+  <figure class="case-detail__mockup reveal">
+    <img src="mockup_1.png" alt="Telas do app Itaú mostrando a jornada de Limites de transações: tela de preferências com opções de Pix e transferências, e tela de confirmação de 'Edição de limite realizada com sucesso'." loading="lazy">
+  </figure>
 
   <section class="case-detail__section case-detail__result card">
     <h2>Resultado</h2>
