@@ -455,6 +455,21 @@ body.no-scroll{ overflow:hidden; }
 .case-side .company{ font-family:var(--font-display); font-weight:700; font-size:18px; }
 .case-side .period{ font-family:var(--font-mono); font-size:12.5px; color:var(--muted); }
 .case-side .location{ font-size:13.5px; color:var(--ink-soft); }
+
+/* -- variante com mockup de imagem real (ex.: card do Itaú) -- */
+.case-side--photo{
+  background:var(--bg-elevated);
+  padding:20px 20px 22px;
+  justify-content:flex-start;
+  gap:16px;
+}
+.case-side__mockup{
+  width:100%;
+  height:260px;
+  object-fit:contain;
+  display:block;
+  border-radius:var(--radius-m);
+}
 .case-body{ padding:32px 36px; }
 .case-tag{ font-family:var(--font-mono); font-size:12px; color:var(--accent); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:12px; }
 .case-body h3{ font-size:21px; margin-bottom:12px; }
@@ -752,18 +767,22 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
       <div class="case-list">
 
         <article class="case card reveal">
-          <div class="case-side">
-            <p class="company">Itaú Unibanco</p>
-            <p class="period">abr 2022 — jun 2026</p>
-            <p class="location">Product Designer II · Remoto</p>
+          <div class="case-side case-side--photo">
+            <img class="case-side__mockup" src="assets/itau-limites-mockup.png" alt="Duas telas do app do Itaú: confirmação de 'Edição de limite realizada com sucesso' para o limite diário de Pix para contatos salvos, e a tela de Limites de transações, com opções de Pix para contatos salvos, pessoas não salvas, empresas não salvas e Transferências (TED e TEF)." loading="lazy" width="1500" height="1125">
+            <div>
+              <p class="company">Itaú Unibanco</p>
+              <p class="period">abr 2022 — jun 2026</p>
+              <p class="location">Product Designer II · Remoto</p>
+            </div>
           </div>
           <div class="case-body">
             <p class="case-tag">Bancário · Design System</p>
             <h3>Jornada Pix e simplificação de experiências transacionais</h3>
             <ul>
+              <li>Atuação simultânea em 2 squads no time de Pagamentos, responsável pela jornada transacional Pix e Chaves Pix para todos os segmentos (Varejo, Uniclass, Personnalité e Private).</li>
               <li>Condução da frente de design na simplificação da experiência de Limites transacionais, reduzindo a carga cognitiva em 26% e elevando o CES em 8 pontos.</li>
-              <li>Atuação simultânea em 2 squads no time de Pagamentos, responsável pela jornada transacional Pix e Limites para todos os segmentos (Varejo, Uniclass, Personnalité e Private).</li>
-              <li>Premiação interna por impacto e inovação</li>
+              <li>Redesenho do fluxo de consulta e alteração de Dados cadastrais com o novo Design System, elevando a atualização cadastral em 18% em todos os segmentos.</li>
+              <li>Colaboração no Iti, banco digital do Itaú, na entrega de 2 funcionalidades para o segmento Pequeno Empreendedor (EMP5).</li>
             </ul>
             <div class="case-chips">
               <span class="chip">Design System</span>
@@ -775,14 +794,17 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
         </article>
 
         <article class="case card reveal">
-          <div class="case-side">
-            <p class="company">Bild Desenvolvimento Imobiliário</p>
-            <p class="period">mar 2021 — abr 2022</p>
-            <p class="location">Product Designer II · Híbrido</p>
+          <div class="case-side case-side--photo">
+            <img class="case-side__mockup" src="assets/bild-daltonismo-mockup.png" alt="Simulação de daltonismo na tela inicial do app: Protanopia (vermelho) e Deuteranopia (verde) em tons esverdeados, Tritanopia (azul) em tons rosados, e Acromia em escala de cinza." loading="lazy" width="720" height="568">
+            <div>
+              <p class="company">Bild Desenvolvimento Imobiliário</p>
+              <p class="period">mar 2021 — abr 2022</p>
+              <p class="location">Product Designer II · Híbrido</p>
+            </div>
           </div>
           <div class="case-body">
             <p class="case-tag">Construção civil · Acessibilidade</p>
-            <h3>Validação de acessibilidade para pessoas não visuais nos apps ConectaBild e VittaFácil</h3>
+            <h3>Liderança em acessibilidade digital para BPO financeiro</h3>
             <ul>
               <li>Liderança do processo de validação de acessibilidade digital em 2 grandes produtos, desenvolvidos para um processo de BPO financeiro voltado a outras construtoras.</li>
               <li>Condução de workshops de acessibilidade digital com base no guia WCAG, conectando o time com referências de mercado.</li>
