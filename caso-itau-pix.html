@@ -819,51 +819,57 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
   <p class="case-detail__summary">Redesenho da experiência de Pix, Chaves Pix e Limites transacionais para todos os segmentos do Itaú — Varejo, Uniclass, Personnalité e Private — conduzido simultaneamente em 2 squads do time de Pagamentos.</p>
 
   <dl class="case-detail__meta">
-    <div class="case-detail__meta-item"><dt>Papel</dt><dd>Product Designer II, em 2 squads simultâneos</dd></div>
+    <div class="case-detail__meta-item"><dt>Papel</dt><dd>Product Designer, Facilitador</dd></div>
     <div class="case-detail__meta-item"><dt>Squad</dt><dd>Limites Transacionais</dd></div>
     <div class="case-detail__meta-item"><dt>Período</dt><dd>abr 2025 — jul 2025</dd></div>
   </dl>
 
-  <section class="case-detail__section">
-    <h2>Contexto</h2>
-    <p>O Pix é um dos produtos de maior volume transacional do Itaú, usado por perfis muito diferentes entre si — desde clientes do Varejo até o segmento Private. Ao mesmo tempo em que a adoção cresceu, também aumentaram as tentativas de fraude e golpes financeiros, exigindo mecanismos que equilibrassem conveniência e segurança.<br>Os limites de transação representam uma das principais camadas de proteção contra movimentações indevidas. Entretanto, muitos clientes desconhecem como esses limites funcionam, quando podem ser alterados ou quanto tempo leva para que um novo valor entre em vigor. Essa falta de clareza gera dúvidas, reduz a confiança e aumenta a demanda por atendimento.</p>
-  </section>
-
-  <section class="case-detail__section">
-    <h2>Problema</h2>
-    <p>Diante desse cenário, o desafio consistiu em redesenhar a experiência de gestão de limites do Pix, tornando-a mais intuitiva, transparente e orientada à segurança. A proposta buscou permitir que o cliente compreendesse facilmente seus limites atuais, diferenciasse regras para períodos diurno e noturno, entendesse o prazo de aprovação para aumentos e tivesse autonomia para ajustar seus limites conforme suas necessidades, reduzindo atritos durante o processo.</p>
-    <p>A organização dos limites transacionais, também chamados como "baldes" estavam divididos por produto (Pix, TED e TEF), recebedor (contatos salvos, contatos não salvos, entre minhas contas, empresas), período (diurno e noturno) e por fim, se o ajuste era para cada transação ou para um período em específico. Todo essa complexidade gerava um menu com 46 possibilidades de ajuste de limite transacional.</p>  
-  </section>
-
-  <section class="case-detail__section">
-    <h2>Papel</h2>
-    <p>Além da usabilidade, o projeto priorizou uma comunicação simples sobre as medidas de segurança adotadas pelo banco, reforçando a confiança dos usuários e incentivando boas práticas de proteção da conta. O resultado esperado era uma experiência mais clara e eficiente, capaz de reduzir erros, diminuir contatos com os canais de suporte e aumentar a percepção de controle e segurança durante as transações via Pix.</p>
-  </section>
-
-  <section class="case-detail__section">
-    <h2>Processo</h2>
-    <h3>Discovery</h3>
-    <ul>
-      <li>Levantamento de dados de comportamento reais (GA4, FullStory) para identificar onde os clientes mais hesitavam ou abandonavam o ajuste de limites.</li>
-      <li>Análise da métrica Customer Effort Score (CES), explorando avaliações e comentários de clientes de diferentes segmentos para identificar os principais pontos de fricção.</li>
-      <li>Investigação de dados comportamentais por meio do GA4 e FullStory, mapeando etapas de maior hesitação e abandono durante a configuração dos limites do Pix.</li>
-      <li>Estudo das regulamentações do Banco Central (BACEN) para garantir conformidade com as normas vigentes.</li>
-      <li>Benchmark externo e interno com outras jornadas de gestão de limites do banco, como limite de conta e limite de cartão de crédito, identificando padrões e oportunidades de padronização da experiência.</li>
-    </ul>
-
-    <h3>Delivery</h3>
-    <ul>
-      <li>Evolução da interface por meio de sessões de Craft Design com especialistas e lideranças de Design.</li>
-      <li>Redesenho da hierarquia de informação da tela de Limites, priorizando os controles mais usados por cada segmento antes dos avançados.</li>
-      <li>Realização de Design Critiques com lideranças, comunidade de Design e squad para refinamento das soluções.</li>
-      <li>Planejamento do tagueamento da nova jornad para monitoramento de comportamento e mensuração de resultados.</li>
-      <li>Validação das interfaces com o time de Acessibilidade, assegurando conformidade com boas práticas de inclusão.</li>
-    </ul>
-  </section>
-
   <figure class="case-detail__mockup reveal">
     <img src="assets/mockup_1.png" alt="Telas do app Itaú mostrando a jornada de Limites de transações: tela de preferências com opções de Pix e transferências, e tela de confirmação de 'Edição de limite realizada com sucesso'." loading="lazy">
   </figure>
+
+  <section class="case-detail__section">
+    <h2>Contexto</h2>
+    <p><strong>Com o crescimento do Pix e o aumento das tentativas de fraudes, o desafio foi redesenhar a gestão de limites transacionais para equilibrar segurança e simplicidade. A experiência era complexa, com 46 possibilidades de configuração distribuídas entre produtos (Pix, TED e TEF), tipos de recebedor (contatos salvos, contatos não salvos, mesma titularidade, empresas), períodos (diurno, noturno) e tipos de limite (por transação, por período), dificultando o entendimento dos clientes sobre seus limites, regras e prazos de alteração. O objetivo foi tornar essa jornada mais intuitiva, transparente e orientada à autonomia do usuário.</p>
+
+    <h2>Facilitação</h2>
+    <h3>1. Descoberta e alinhamento do problema</h3>
+    <p><strong>Objetivo da facilitação:</strong> construir uma visão compartilhada sobre os principais problemas da experiência atual e alinhar restrições regulatórias, técnicas e de negócio antes de propor soluções.</p>
+    <p><strong>Participantes:</strong> Product Managers, Designers, Engenharia, Fraudes, Jurídico.</p>
+    <p><strong>Apresentação de evidências</strong><br>O workshop iniciou com a consolidação de dados quantitativos e qualitativos para nivelar o conhecimento do grupo. Foram apresentados dados de comportamento (GA4 e FullStory), Customer Effort Score (CES), chamados recorrentes de atendimento, regras do BACEN e benchmark interno e externo.</p>
+    <p><strong>Affinity Mapping</strong><br>Em conjunto com o time multidisciplinar, agrupamos os principais problemas encontrados durante a pesquisa. Os insights evidenciaram três grandes temas:</p>
+    <ul>
+      <li>Dificuldade para compreender os diferentes tipos de limites.</li>
+      <li>Excesso de opções disponíveis para configuração.</li>
+      <li>Baixa previsibilidade sobre aprovação de novos limites.</li>
+    </ul>
+    <p><strong>Mapeamento da Jornada</strong><br>Facilitei a construção da jornada atual da configuração de limites. Para cada etapa foram identificados objetivos do cliente, dúvidas recorrentes, pontos de abandono e riscos para o negócio. Essa atividade evidenciou que os 46 tipos de configuração eram consequência de regras de negócio organizadas sob a lógica interna do banco, e não da forma como os clientes compreendiam o serviço.</p>
+
+
+    <h3>2. Ideação colaborativa</h3>
+    <p><strong>Objetivo da facilitação:</strong> gerar alternativas para reorganizar a experiência conciliando necessidades do usuário, restrições regulatórias e requisitos técnicos.</p>
+    <p><strong>Priorização</strong><br>As propostas foram avaliadas considerando impacto para o usuário, viabilidade técnica, riscos regulatórios e esforço de implementação. Como resultado, definimos como prioridade reorganizar a arquitetura da informação, destacando primeiro os limites mais utilizados e reduzindo a complexidade percebida da jornada.</p>
+
+    <h3>3. Construção da solução</h3>
+    <p><strong>Objetivo da facilitação:</strong> evoluir rapidamente as propostas por meio de ciclos curtos de colaboração.</p>
+    <p><strong>Craft Design</strong><br>Conduzi sessões de refinamento com especialistas e lideranças de Design para revisar hierarquia da informação, comunicação sobre segurança, nomenclaturas, componentes visuais e consistência com o Design System.</p>
+    <p><strong>Design Critique</strong><br>As soluções foram apresentadas para diferentes designers e stakeholders utilizando feedback estruturado. As discussões resultaram em melhorias importantes na organização das informações e na comunicação dos prazos para alteração de limites.</p>
+
+    <h3>4. Validação</h3>
+    <p><strong>Objetivo da facilitação:</strong> reduzir riscos antes da implementação.</p>
+    <p><strong>Revisão com especialistas</strong><br>Realizamos sessões específicas com as equipes de acessibilidade, especialistas em fraudes e jurídico. Cada área validou aspectos críticos relacionados à conformidade, segurança e viabilidade técnica.</p>
+    <p><strong>Planejamento de mensuração</strong><br>Em conjunto com o Product Manager, definimos o plano de tagueamento da nova jornada para acompanhar indicadores após o lançamento. Foram definidos eventos para monitorar:</p>
+    <ul>
+      <li>Pessoas usuárias que queriam apenas consultar seus limites.</li>
+      <li>Início da edição de limites.</li>
+      <li>Solicitações de aumento e redução.</li>
+      <li>Conclusão da ediçao.</li>
+    </ul>
+
+    <h3>5. Aprendizados</h3>
+    <p>A facilitação multidisciplinar permitiu alinhar rapidamente diferentes perspectivas e transformar uma estrutura composta por 46 possibilidades de configuração para 12 possibildidades, simplificando a jornada de personalização sem tirar a autonomia da pessoa usuária.</p>
+    <p>Além da evolução da interface, o processo mostrou que boa parte da complexidade estava na forma como as regras eram apresentadas ao cliente. Ao envolver áreas como Fraudes, Jurídico, Engenharia e Design desde o início, foi possível equilibrar segurança, conformidade regulatória e usabilidade, reduzindo riscos de retrabalho e aumentando o alinhamento entre as equipes.</p>
+  </section>
 
   <section class="case-detail__section case-detail__result card">
     <h2>Resultado</h2>
@@ -886,15 +892,6 @@ section[id], main[id]{ scroll-margin-top:var(--nav-h); }
         <p class="stat-label">premiação interna por impacto e inovação</p>
       </div>
     </div>
-  </section>
-
-  <section class="case-detail__section">
-    <h2>Aprendizado</h2>
-    <p>Este projeto reforçou que nem toda experiência pode ser simplificada apenas pela ótica do usuário. Em um contexto altamente regulado, como o financeiro, decisões de design precisam equilibrar usabilidade, segurança e conformidade com as diretrizes do Banco Central.
-
-Durante o desenvolvimento, observei que algumas instituições digitais reduzem a complexidade da gestão de limites ao flexibilizar determinadas regras da experiência, assumindo diferentes níveis de risco em relação às exigências regulatórias. No Itaú, a prioridade foi construir uma solução que preservasse a segurança e a conformidade, sem deixar de evoluir continuamente a experiência.
-
-Após o lançamento, o trabalho não se encerrou. A jornada passou a ser monitorada por meio de GA4, FullStory e da métrica Customer Effort Score (CES), permitindo identificar oportunidades de simplificação e orientar melhorias incrementais. Além disso, a evolução da solução continuou sendo acompanhada pelos OKRs da comunidade, garantindo que as decisões futuras permanecessem alinhadas aos objetivos de negócio e às necessidades dos clientes.</p>
   </section>
 
   <nav class="case-pagination" aria-label="Outros estudos de caso">
